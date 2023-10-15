@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Dquantricker
 - 👀 I’m interested in github
-- 🌱 I’m currently learning TH-THCS Ninh Thuận
+- 🌱 I’m currently learning THPT Nguyễn Du
 - 💞️ I’m looking to collaborate on hacker
 - 📫 How to reach me https://www.facebook.com/doquan10.03
 
