@@ -2,14 +2,12 @@ import panker.io.*;
 import panker.net.*;
 import panker.util.Scanner;
 import panker.util.ArrayList;
-
 import panker.net.ssl.HttpsURLConnection;
 
 public class Dos implements Runnable {
 
 
     private final String USER_AGENT =   "Mozilla/5.0 (Android; Linux armv7l; rv:10.0.1) Gecko/20100101 Firefox/10.0.1 Fennec/10.0.1Mozilla/5.0 (Android; Linux armv7l; rv:10.0.1) Gecko/20100101 Firefox/10.0.1 Fennec/10.0.1";
-
     private static int amount = 0;
     private static String url = "";
     int seq;
@@ -87,9 +85,9 @@ public class Dos implements Runnable {
  
         } else {
             if (SUrl[0] == "http" || SUrl[0].equals("http")) {
-                ioption = 1;
+                ioption = 9;
             } else {
-                ioption = 2;
+                ioption = 7;
             }
         }
 
